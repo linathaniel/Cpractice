@@ -10,6 +10,11 @@ double sub_double(double x, double y)
     return x - y;
 }
 
+float add_three_float(float x, float y, float z)
+{
+    return x + y + z;
+}
+
 
 int main(int argc, char** argv)
 {
@@ -53,7 +58,17 @@ int main(int argc, char** argv)
     double result2 = sub_double(x2, y2);
     printf("%f - %f = %f\n", x2, y2, result2);
 
+    // print long in hex
+    long z = 1100L;
+    printf("%08x\n", z);
 
+    // add three float number and print the result
+
+    float x3 = 3.21f;
+    float y3 = 6.54f;
+    float z3 = 9.87f;
+    float result3 = add_three_float(x3, y3, z3);
+    printf("%f + %f + %f = %f\n", x3, y3, z3, result3);
 
     return 0;
 }
